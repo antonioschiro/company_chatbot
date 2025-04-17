@@ -2,7 +2,7 @@
 This project showcases a customizable assistant chatbot built for a fictional company called Quantum Technologies, which specializes in selling hard drives.
 The chatbot is designed to:
 
-1. Provide detailed information about company products (pricing, discounts, specs);
+1. Provide detailed information about company products (pricing, discounts, employees);
 
 2. Share insights on the company’s history and employees;
 
