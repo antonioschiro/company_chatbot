@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Technologies Backoffice</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../static/style.css" />
+  <link rel="stylesheet" href="../static/backoffice.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <h2>Awaiting questions</h2>
+    
+    {% if pendingQuestions %}
+      {% for client_id, question in pendingQuestions.items() %}
+          <label class="radio-item" id="li-{{ client_id }}">
+              <input type="radio" onclick="handleClick(this)" name="question" value="{{ client_id }}"> 
+              {{ question }}
+          </label>
+      {% endfor %}
+    {% else %}
+    <p id="infoBanner" class="info-banner show">There are no pending questions.</p>
+
+    {% endif %}
+
+    <div id="responseContainer" class="input-group">
+      <textarea id="messageInput" placeholder="Type answer..." onkeyup="updateSendButton()" class="form-control" aria-label="Response"></textarea>
+    </div>
+    <button id="sendButton" onclick="sendMessage()">Send</button>
+  </div>
+  <script src="../static/backoffice.js"></script>
+</body>
+
+</html>

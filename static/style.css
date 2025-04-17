@@ -1,0 +1,52 @@
+body {
+  background: linear-gradient(45deg, #7ebfff, #65a3ff, #99ccff);
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.chat-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #1a237e;
+  text-align: center;
+}
+
+button {
+  background-color: #1e90ff; /* Dodger Blue */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #007acc;
+}
+
+.form-control {
+  border-radius: 10px;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 8px rgba(100, 149, 237, 0.6);
+  border-color: #6495ed;
+  outline: none;
+}
+

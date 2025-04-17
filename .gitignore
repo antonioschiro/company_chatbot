@@ -1,0 +1,8 @@
+# Ignore unnecessary file
+*.py[cod]
+*.pyc
+__pycache__/
+.venv/
+venv/
+# Don't expose API KEY
+.env
